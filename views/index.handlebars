@@ -1,0 +1,25 @@
+{{!-- <ul class="people_list">
+  {{#each data}}
+    <li>{{this._id}}</li>
+  {{/each}}
+</ul> --}}
+
+<div class="container card-container">
+
+
+
+{{#each articles}} 
+  <div class="card">
+  <p>Title: {{this.title}} </p>
+  <p>URL: <a href="https://www.cnn.com{{this.link}}">https://www.cnn.com{{this.link}}</a></p>
+  </div>
+
+<br>
+
+{{/each}}
+
+</div>
+
+
+
+

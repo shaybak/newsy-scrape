@@ -8,9 +8,8 @@
 
 
         {{!-- Custom CSS --}}
-		<link rel="stylesheet" href="/public/assets/css/styles.css" type="text/css" />
+		<link rel="stylesheet" href="../assets/css/styles.css" type="text/css" />
 		<title>Newsy-Scrape</title>
-		
 		
 
 	</head>
@@ -25,25 +24,35 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Saved Articles</a>
+				<a class="nav-link" href="/saved">Saved Articles</a>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-primary scrape-new" href="#">SCRAPE NEW ARTICLES</a>
+				<button class="btn btn-primary scrape-new" id="scrapey">SCRAPE NEW ARTICLES</button>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-primary scrape-new" href="#">CLEAR ARTICLES</a>
+				<button class="btn btn-primary scrape-new" id="cleary">CLEAR ARTICLES</button>
 			</li>
 			</ul>
 		</div>
 		</nav>
 
+		
+
 		{{!-- App Branding --}}
 		<div class="jumbotron">
 			<h1>Mongo Scraper</h1>
 		</div>
+
+
+		
+
+<div class="container">
+
+
+
 
 
 
@@ -52,7 +61,11 @@
 
 
 
+
+
+		</div>
+
         <script src="https://code.jquery.com/jquery.js"></script>
-        {{!-- <script src="/assets/js/cats.js"></script> --}}
+        <script src="../assets/js/index.js"></script>
 	</body>
 </html>

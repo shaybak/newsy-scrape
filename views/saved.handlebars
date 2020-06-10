@@ -1,0 +1,23 @@
+
+{{#if articles}}
+
+    {{#each articles}} 
+    <div class="card">
+        <p>Title: {{this.title}} </p>
+        <p>URL: <a href="https://www.cnn.com{{this.link}}">https://www.cnn.com{{this.link}}</a></p>
+    </div>
+
+    <br>
+
+    {{/each}}
+{{else}}
+<div class="no-artciles">
+            <div class="no-articles">
+                <h4>You have no saved articles.</h4>
+            </div>
+        </div>
+
+
+{{/if}}
+
+</div>
